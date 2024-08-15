@@ -73,8 +73,8 @@ foreach ($network in $networks) {
 
 # Telegram API Details
 
-$botToken = "7522346180:AAEf8kqWiA-5mtve5ASyBak48Srlrhfh-c4" #input bottoken
-$chatId = "7412814946" #input chat id
+$botToken = "" #input bottoken
+$chatId = "" #input chat id
 $apiUrl = "https://api.telegram.org/bot$botToken/sendMessage"
 
 # Send the Message via Telegram
